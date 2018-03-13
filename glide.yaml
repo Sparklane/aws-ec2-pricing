@@ -1,4 +1,4 @@
-package: github.com/Sparklane/aws-ec2-prices
+package: github.com/Sparklane/aws-ec2-pricing
 import:
 - package: github.com/cristim/ec2-instances-info
   version: 6680051af974c54d19c3fbc2f45597deae73b111

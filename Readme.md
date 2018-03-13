@@ -1,4 +1,4 @@
-# AWS EC2 Prices
+# AWS EC2 Pricing
 
 Will get current spot and ondemand prices for the current AWS Region
 
@@ -13,7 +13,8 @@ Example for getting all prices:
 docker run -it \
   -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
   -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
-  sparklane/aws-ec2-prices --instance-type m4.xlarge
+  -e AWS_REGION=eu-west-1 \
+  sparklane/aws-ec2-pricing --instance-type m4.xlarge
 ```
 
 Returns: 
@@ -32,5 +33,5 @@ Returns:
 
 Example for getting prices for one instance tyes with a formated output:
 ```
-docker run -it sparklane/aws-ec2-prices --instance-type m4.xlarge --formated
+docker run -it sparklane/aws-ec2-pricing --instance-type m4.xlarge --formated
 ```

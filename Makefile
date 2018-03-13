@@ -1,6 +1,6 @@
 .PHONY: all
 VERSION ?= latest
-APP ?= aws-ec2-prices
+APP ?= aws-ec2-pricing
 NAME ?= $(APP)
 SHELL=/bin/bash -O extglob -c
 SSH_PRIVATE_KEY ?= ~/.ssh/id_rsa
