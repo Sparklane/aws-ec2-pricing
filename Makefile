@@ -5,7 +5,7 @@ NAME ?= $(APP)
 SHELL=/bin/bash -O extglob -c
 SSH_PRIVATE_KEY ?= ~/.ssh/id_rsa
 
-all: build publish
+all: build
 
 # ### Lock dependencies ###
 # This is used at dev time for building glide.lock file

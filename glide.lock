@@ -1,28 +1,38 @@
-hash: ee076f6ff5bd4a18ae32363923f8289f86b0a9f0f1f21c83726144b3b1896c59
-updated: 2018-03-08T17:32:56.542230585+01:00
+hash: 5a7ed8847f0ea2d30dfa3275fe565979212d1a80406947ba0a1be489a229cc44
+updated: 2018-10-16T11:53:14.707652183+02:00
 imports:
 - name: github.com/aws/aws-sdk-go
-  version: 45a97ce8abeff27aeeac668fa01cb85103b0d17e
+  version: 5197757a58a794d49d2d0c50a932997157734100
   subpackages:
   - aws
   - aws/awserr
   - aws/awsutil
   - aws/client
   - aws/client/metadata
+  - aws/corehandlers
   - aws/credentials
+  - aws/credentials/ec2rolecreds
+  - aws/credentials/endpointcreds
+  - aws/credentials/stscreds
+  - aws/defaults
+  - aws/ec2metadata
   - aws/endpoints
   - aws/request
+  - aws/session
   - aws/signer/v4
+  - internal/sdkio
   - internal/sdkrand
   - internal/shareddefaults
   - private/protocol
   - private/protocol/ec2query
+  - private/protocol/query
   - private/protocol/query/queryutil
   - private/protocol/rest
   - private/protocol/xml/xmlutil
   - service/ec2
+  - service/sts
 - name: github.com/cristim/ec2-instances-info
-  version: 6680051af974c54d19c3fbc2f45597deae73b111
+  version: 73c042a5558cd6d8b61fb82502d6f7aec334e9ed
   subpackages:
   - data
 - name: github.com/go-ini/ini
