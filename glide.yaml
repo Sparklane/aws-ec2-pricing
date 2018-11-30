@@ -1,7 +1,7 @@
 package: github.com/Sparklane/aws-ec2-pricing
 import:
 - package: github.com/cristim/ec2-instances-info
-  version: 73c042a5558cd6d8b61fb82502d6f7aec334e9ed
+  version: 8e18ab8c896bbe65d6ee10d6815c4fd87fdc11e0
 - package: github.com/namsral/flag
   version: 67f268f20922975c067ed799e4be6bacf152208c
 - package: github.com/aws/aws-sdk-go

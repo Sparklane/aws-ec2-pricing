@@ -1,5 +1,5 @@
-hash: 5a7ed8847f0ea2d30dfa3275fe565979212d1a80406947ba0a1be489a229cc44
-updated: 2018-10-16T11:53:14.707652183+02:00
+hash: 9128eb7f59b6d56392c5a508bb5f44884ba26bcd7a1c3dc2e35f289ab79d95b4
+updated: 2018-11-30T11:05:34.770907225+01:00
 imports:
 - name: github.com/aws/aws-sdk-go
   version: 5197757a58a794d49d2d0c50a932997157734100
@@ -32,7 +32,7 @@ imports:
   - service/ec2
   - service/sts
 - name: github.com/cristim/ec2-instances-info
-  version: 73c042a5558cd6d8b61fb82502d6f7aec334e9ed
+  version: 8e18ab8c896bbe65d6ee10d6815c4fd87fdc11e0
   subpackages:
   - data
 - name: github.com/go-ini/ini
