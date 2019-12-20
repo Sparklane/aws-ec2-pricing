@@ -1,5 +1,5 @@
 # ### Build stage
-FROM golang:1.9.2 as builder
+FROM golang:1.13.5 as builder
 WORKDIR /go/src/project
 ARG SSH_PRIVATE_KEY
 
