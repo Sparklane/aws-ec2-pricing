@@ -11,9 +11,9 @@ all: build
 # This is used at dev time for building glide.lock file
 # Must be run whenever you need to refresh dependecies
 lock-dep:
+	@go get github.com/ngdinhtoan/glide
 	@go get github.com/ngdinhtoan/glide-cleanup
-	@glide cleanup \
-		&& glide update
+	@~/go/bin/glide-cleanup && ~/go/bin/glide update
 
 # ### Build ####
 build:
