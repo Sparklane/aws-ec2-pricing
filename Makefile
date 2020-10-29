@@ -1,11 +1,9 @@
-.PHONY: all
+NAME = aws-ec2-pricing
 VERSION ?= latest
-APP ?= aws-ec2-pricing
-NAME ?= $(APP)
-SHELL=/bin/bash -O extglob -c
 SSH_PRIVATE_KEY ?= ~/.ssh/id_rsa
+REGISTRY ?= ""
 
-all: build
+all: build publish
 
 # ### Lock dependencies ###
 # This is used at dev time for building glide.lock file
@@ -15,6 +13,10 @@ lock-dep:
 	@go get github.com/ngdinhtoan/glide-cleanup
 	@~/go/bin/glide-cleanup && ~/go/bin/glide update
 
-# ### Build ####
 build:
-	@docker build -t sparklane/$(NAME) .
+	@docker build -t $(NAME):$(VERSION) \
+	--rm=true .
+
+publish: build
+	@docker tag $(NAME):$(VERSION) $(REGISTRY)/$(NAME):$(VERSION)
+	@docker push $(REGISTRY)/$(NAME):$(VERSION)
